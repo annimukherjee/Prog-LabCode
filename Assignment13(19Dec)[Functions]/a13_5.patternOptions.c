@@ -14,9 +14,9 @@ int main()
     patternOptions(1, '-', 2);
     return 0;
 }
-void patternOptions(int upOrInvert, char iterable, int num)
+void patternOptions(int dir, char iterable, int num)
 {
-    if (upOrInvert == 0)
+    if (dir == 0)
     {
         for (int i = num; i >= 1; i--)
         {

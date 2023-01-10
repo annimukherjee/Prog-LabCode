@@ -4,7 +4,6 @@ int main()
 {
     int a, b, c;
     scanf("%d%d%d", &a, &b, &c);
-
     printf("ORIGINAL:\n\na= %d\nb= %d\nc= %d\n", a, b, c);
     swap(&a, &b, &c);
     printf("\n\nSWAPPED\n\na= %d\nb= %d\nc= %d\n", a, b, c);

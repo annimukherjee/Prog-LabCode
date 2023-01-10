@@ -3,10 +3,10 @@ int sum(int, int);
 
 int main()
 {
-    int n = 5, i = 1;
-    // scanf("%d%d", &n, &i);
+    int n, i;
+    scanf("%d%d", &i, &n);
     int ans = sum(i, n);
-    printf("the sum from %d to %d is %d\n", i, n, ans);
+    printf("sum from %d to %d is %d\n", i, n, ans);
     return 0;
 }
 

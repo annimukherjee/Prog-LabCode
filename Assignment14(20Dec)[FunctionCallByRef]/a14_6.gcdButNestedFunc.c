@@ -5,7 +5,7 @@ int gcdArr(int *);
 int main()
 {
     int a[] = {32, 40, 64, 88, 72};
-    printf("the gcd of the array is: %d\n", gcdArr(a));
+    printf("gcd of array: %d\n", gcdArr(a));
     return 0;
 }
 

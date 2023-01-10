@@ -16,7 +16,7 @@ int fib(int x)
     for (int i = 2; i < x; i++)
     {
         *(fibb + i) = *(fibb + i - 1) + *(fibb + i - 2);
-        sum += fibb[i];
+        sum += *(fibb + i);
     }
     return sum;
 }

@@ -6,14 +6,11 @@ int main()
     int sumOfArr = 0;
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     sumOfArr = sumArr(arr);
-    printf("the sum of the array is: %d\n", sumOfArr);
+    printf("sum of array: %d\n", sumOfArr);
     return 0;
 }
 
-int sum(int a, int b)
-{
-    return (a + b);
-}
+int sum(int a, int b) {return (a + b);}
 
 int sumArr(int *a)
 {

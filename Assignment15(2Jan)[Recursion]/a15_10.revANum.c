@@ -1,23 +1,18 @@
 #include <stdio.h>
-
-int reverseNumber(int n, int reversed, int place)
+int no = 0;
+void rev(int p)
 {
-    if (n == 0)
+    if (p > 0)
     {
-        return reversed;
-    }
-    else
-    {
-        return reverseNumber(n / 10, reversed + (n % 10) * place, place * 10);
+        no = (no * 10) + p % 10;
+        rev(p / 10);
     }
 }
-
 int main()
 {
     int n;
-    printf("Enter a positive integer: ");
+    printf("enter number");
     scanf("%d", &n);
-    int reversed = reverseNumber(n, 0, 1);
-    printf("%d\n", reversed);
-    return 0;
+    rev(n);
+    printf("%d", no);
 }

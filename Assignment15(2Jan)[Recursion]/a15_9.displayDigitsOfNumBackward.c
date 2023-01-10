@@ -14,7 +14,7 @@ void printDigits(int n)
 int main()
 {
     int n;
-    printf("Enter a positive integer: ");
+    printf("positive integer: ");
     scanf("%d", &n);
     printDigits(n);
     return 0;

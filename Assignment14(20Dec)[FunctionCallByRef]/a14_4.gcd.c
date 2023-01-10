@@ -6,7 +6,7 @@ int main()
     int a, b, gcdd = 0;
     scanf("%d%d", &a, &b);
     gcd(&a, &b, &gcdd);
-    printf("the gcd of the two nos is %d\n", gcdd);
+    printf("the gcd: %d\n", gcdd);
     return 0;
 }
 

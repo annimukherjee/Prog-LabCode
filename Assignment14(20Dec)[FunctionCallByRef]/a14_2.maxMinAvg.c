@@ -6,7 +6,7 @@ int main()
     float avg;
     scanf("%d%d%d", &a, &b, &c);
     maxMinAvg(&a, &b, &c, &max, &min, &avg);
-    printf("avg: %f\n", avg);
+    printf("avg: %.2f\n", avg);
     printf("max: %d\n", max);
     printf("min: %d\n", min);
     return 0;
@@ -15,17 +15,12 @@ int main()
 void maxMinAvg(int *a, int *b, int *c, int *max, int *min, float *avg)
 {
     *avg = (*a + *b + *c) / 3.0;
-    if (*a > *b && *a > *c)
-        *max = *a;
-    else if (*b > *c)
-        *max = *b;
-    else
-        *max = *c;
 
-    if (*a < *b && *a < *c)
-        *min = *a;
-    else if (*b < *c)
-        *min = *b;
-    else
-        *min = *c;
+    *max = *a;
+    if (*max < *b) *max = *b;
+    if (*max < *c) *max = *c;
+
+    *min = *a;
+    if (*b < *min) *min = *b;
+    if (*c < *min) *min = *c;
 }
